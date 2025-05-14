@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Школа Разминирования</title>
-        <meta name="description" content="Профессиональное обучение сапёров гуманитарного разминирования." />
+        <title>Гуманитарное разминирование</title>
+        <meta name="description" content="Гуманитарное разминирование территорий." />
       </Head>
       <Header />
       <HeroSection />

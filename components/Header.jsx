@@ -3,11 +3,11 @@ import useScrollSpy from "../hooks/useScrollSpy";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const activeId = useScrollSpy(["home", "about", "profession", "training", "contact"], 100);
+  const activeId = useScrollSpy(["home", "about-company", "services", "capabilities", "advantages", "company-results", "news"], 100);
   
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => (document.body.style.overflow = "");
+    return () => void (document.body.style.overflow = "");
   }, [isOpen]);
   
   const handleClose = () => setIsOpen(false);
@@ -22,12 +22,14 @@ const Header = () => {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center md:justify-center justify-between">
         
         {/* Десктоп-меню */}
-        <div className="hidden md:flex flex-wrap justify-center space-x-12 text-lg font-medium uppercase tracking-wider">
+        <div className="hidden md:flex flex-wrap justify-center space-x-6 text-md font-medium uppercase tracking-wider">
           <a href="#home" className={linkClass("home")}>Главная</a>
-          <a href="#about" className={linkClass("about")}>О нас</a>
-          <a href="#profession" className={linkClass("profession")}>Профессии</a>
-          <a href="#training" className={linkClass("training")}>Где проходит</a>
-          <a href="#contact" className={linkClass("contact")}>Контакты</a>
+          <a href="#about-company" className={linkClass("about-company")}>О компании</a>
+          <a href="#services" className={linkClass("services")}>Наши услуги</a>
+          <a href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>
+          <a href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>
+          <a href="#company-results" className={linkClass("company-results")}>Результаты деятельности</a>
+          <a href="#news" className={linkClass("news")}>СМИ о нас</a>
         </div>
         
         {/* Бургер-кнопка */}
@@ -58,13 +60,18 @@ const Header = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col items-end p-6 space-y-6 text-sm uppercase tracking-wider">
+        <nav className="flex flex-col items-stretch p-6 space-y-6 text-sm uppercase tracking-wider">
           <a onClick={handleClose} href="#home" className={linkClass("home")}>Главная</a>
-          <a onClick={handleClose} href="#about" className={linkClass("about")}>О нас</a>
-          <a onClick={handleClose} href="#profession" className={linkClass("profession")}>Профессии</a>
-          <a onClick={handleClose} href="#training" className={linkClass("training")}>Где проходит</a>
-          <a onClick={handleClose} href="#contact" className={linkClass("contact")}>Контакты</a>
+          <a onClick={handleClose} href="#about-company" className={linkClass("about-company")}>О компании</a>
+          <a onClick={handleClose} href="#services" className={linkClass("services")}>Наши услуги</a>
+          <a onClick={handleClose} href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>
+          <a onClick={handleClose} href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>
+          <a onClick={handleClose} href="#company-results" className={`${linkClass("company-results")} leading-tight break-words`}>
+            Результаты деятельности
+          </a>
+          <a onClick={handleClose} href="#news" className={linkClass("news")}>СМИ о нас</a>
         </nav>
+      
       </div>
     </nav>
   );
