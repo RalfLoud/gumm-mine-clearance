@@ -8,16 +8,15 @@ export default function Footer() {
         
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-lg font-semibold">ООО «КОМПЛИТ ТЕХНИК»</p>
-            <p className="text-sm opacity-80">ИНН: 9728100230</p>
+            <p className="text-lg font-semibold">ООО КОНДОР-РА</p>
+            <p className="text-sm opacity-80">5007123650</p>
           </div>
           
           <div>
-            <p className="text-sm">8 (800) 234 13 85</p>
             <div className="flex items-center gap-2 mt-1">
-              <Mail className="w-4 h-4 text-[#78eb46] opacity-80" />
-              <a href="mailto:info@sgrvip.ru" className="text-sm hover:underline">
-                info@sgrvip.ru
+              <Mail className="w-12 h-12 text-[#78eb46] opacity-80" />
+              <a href="mailto:russaper@mail.ru" className="text-sm hover:underline">
+                russaper@mail.ru
               </a>
             </div>
           </div>
@@ -26,16 +25,24 @@ export default function Footer() {
             <div className="flex items-start gap-2">
               <MapPin className="w-12 h-12 text-[#78eb46] opacity-80 mt-1" />
               <p className="text-sm leading-snug">
-                129626, г. Москва, вн.тер.г., м.о. Алексеевский,<br />ул. 2-я Мытищинская, д. 2 с. 1
+                141840, Московская Область, м.о. Дмитровский,<br />г Яхрома, ул Парковая, д. 3
               </p>
             </div>
           </address>
           
           <div>
             <div className="flex items-center gap-2">
-              <Send className="w-12 h-12 text-[#78eb46] opacity-80" />
               <a
-                href="https://t.me/sapper_channel"
+                href="https://t.me/Lugansk_nemo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm hover:underline"
+              >
+                <Send className="w-12 h-12 text-[#78eb46] opacity-80" />
+              </a>
+             
+              <a
+                href="https://t.me/Lugansk_nemo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm hover:underline"

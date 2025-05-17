@@ -3,7 +3,7 @@ import useScrollSpy from "../hooks/useScrollSpy";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const activeId = useScrollSpy(["home", "about-company", "services", "capabilities", "advantages", "company-results", "news"], 100);
+  const activeId = useScrollSpy(["home", "about-company", "services", "capabilities", "advantages", "company-results", "news", "certificate", "contact"], 100);
   
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -25,11 +25,16 @@ const Header = () => {
         <div className="hidden md:flex flex-wrap justify-center space-x-6 text-md font-medium uppercase tracking-wider">
           <a href="#home" className={linkClass("home")}>Главная</a>
           <a href="#about-company" className={linkClass("about-company")}>О компании</a>
-          <a href="#services" className={linkClass("services")}>Наши услуги</a>
-          <a href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>
-          <a href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>
-          <a href="#company-results" className={linkClass("company-results")}>Результаты деятельности</a>
-          <a href="#news" className={linkClass("news")}>СМИ о нас</a>
+          <a href="#services" className={linkClass("services")}>Услуги</a>
+          <a href="#certificate" className={linkClass("certificate")}>Сертификаты</a>
+          {/*<a href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>*/}
+          {/*<a href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>*/}
+          {/*<a href="#company-results" className={linkClass("company-results")}>Результаты деятельности</a>*/}
+          {/*<a href="#company-results" className={linkClass("company-results")}>Результаты деятельности</a>*/}
+          {/*<a href="#news" className={linkClass("news")}>СМИ о нас</a>*/}
+          <a href="#contact" className={linkClass("contact")}>Контакты</a>
+          <a target="_blank"
+             rel="noopener noreferrer" className="text-white transition-colors hover:text-[#89f901]" href="https://t.me/Lugansk_nemo">Трудоустройство</a>
         </div>
         
         {/* Бургер-кнопка */}
@@ -63,13 +68,17 @@ const Header = () => {
         <nav className="flex flex-col items-stretch p-6 space-y-6 text-sm uppercase tracking-wider">
           <a onClick={handleClose} href="#home" className={linkClass("home")}>Главная</a>
           <a onClick={handleClose} href="#about-company" className={linkClass("about-company")}>О компании</a>
-          <a onClick={handleClose} href="#services" className={linkClass("services")}>Наши услуги</a>
-          <a onClick={handleClose} href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>
-          <a onClick={handleClose} href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>
-          <a onClick={handleClose} href="#company-results" className={`${linkClass("company-results")} leading-tight break-words`}>
-            Результаты деятельности
-          </a>
-          <a onClick={handleClose} href="#news" className={linkClass("news")}>СМИ о нас</a>
+          <a onClick={handleClose} href="#services" className={linkClass("services")}>Услуги</a>
+          <a onClick={handleClose} href="#certificate" className={linkClass("certificate")}>Сертификаты</a>
+          {/*<a onClick={handleClose} href="#capabilities" className={linkClass("capabilities")}>Наши возможности</a>*/}
+          {/*<a onClick={handleClose} href="#advantages" className={linkClass("advantages")}>Наши преимущества</a>*/}
+          {/*<a onClick={handleClose} href="#company-results" className={`${linkClass("company-results")} leading-tight break-words`}>*/}
+          {/*  Результаты деятельности*/}
+          {/*</a>*/}
+          {/*<a onClick={handleClose} href="#news" className={linkClass("news")}>СМИ о нас</a>*/}
+          <a onClick={handleClose} href="#contact" className={linkClass("contact")}>Контакты</a>
+          <a target="_blank"
+             rel="noopener noreferrer" className="text-white transition-colors hover:text-[#89f901]" onClick={handleClose} href="https://t.me/Lugansk_nemo">Трудоустройство</a>
         </nav>
       
       </div>

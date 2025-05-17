@@ -9,6 +9,8 @@ import CapabilitiesSection from "@/components/CapabilitiesSection";
 import AdvantagesSection from "@/components/AdvantageSection";
 import CompanyResultsSection from "@/components/CompanyResultSection";
 import NewsSection from "@/components/NewsSection";
+import TrainingContact from "@/components/TrainingContact";
+import CertificateSection from "@/components/CertificateSection";
 
 export default function Home() {
   return (
@@ -24,8 +26,10 @@ export default function Home() {
       <ServicesSection />
       <CapabilitiesSection/>
       <AdvantagesSection/>
-      <CompanyResultsSection/>
-      <NewsSection/>
+      {/*<CompanyResultsSection/>*/}
+      <CertificateSection/>
+      {/*<NewsSection/>*/}
+      <TrainingContact/>
       <Footer />
     </>
   );
