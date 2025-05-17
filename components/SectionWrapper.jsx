@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import useInView from '../hooks/useInView';
 
-const SectionWrapper = ({ id, children, className = "" }) => {
+const SectionWrapper = ({ id, children, className = "", innerClassName = "" }) => {
   const ref = useRef();
   const isVisible = useInView(ref);
   
@@ -21,7 +21,7 @@ const SectionWrapper = ({ id, children, className = "" }) => {
         <div className="absolute inset-y-0 right-0 w-40 md:w-80 bg-gradient-to-b from-transparent via-[#89f901]/40 to-transparent blur-[120px] opacity-20 mix-blend-screen" />
       </div>
       
-      <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-160px)]">
+      <div className={`relative z-10 max-w-6xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-160px)] ${innerClassName}`}>
         {children}
       </div>
     </section>

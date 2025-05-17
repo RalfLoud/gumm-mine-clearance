@@ -14,12 +14,12 @@ export default function HeroSection() {
       
       {/* Контент */}
       <div className="container relative z-10 text-center px-4">
-        <Image src={"/main-logo-white.png"} width={200} quality={100} height={120} alt={"logo"} className="mx-auto"/>
-        <h1 className="text-2xl md:text-6xl font-bold mb-6 leading-tight text-white">
+        <Image src={"/images/main-logo-kondorra.png"} width={200} quality={100} height={120} alt={"logo"} className="mx-auto"/>
+        <h1 className="text-2xl md:text-6xl font-bold my-6 leading-tight text-white">
           СЛУЖБА ГУММАНИТАРНОГО РАЗМИНИРОВАНИЯ
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-white opacity-80">
-          Невозможно построить мир на заминированной земле
+          Нельзя создать прочный мир там, где почва полна мин.
         </p>
       </div>
     </section>
