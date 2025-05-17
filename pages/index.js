@@ -12,6 +12,7 @@ import AdvantagesSection from "@/components/AdvantageSection";
 import TrainingContact from "@/components/TrainingContact";
 import CertificateSection from "@/components/CertificateSection";
 import SeoSchema from "@/components/SeoSchema";
+import YandexMetrika from "@/components/YandexMetrika";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
           <meta name="twitter:image" content="https://grkondor.ru/images/og-image.png"/>
           
           <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-        
+            <YandexMetrika/>
       </Head>
       <SeoSchema/>
       <Header/>
