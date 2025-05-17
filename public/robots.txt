@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Блокировка служебных директорий (если такие есть)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Карта сайта (если есть)
+Sitemap: https://grkondor.ru/sitemap.xml
