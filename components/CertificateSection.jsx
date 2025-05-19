@@ -25,7 +25,7 @@ const CertificateSection = () => {
             {/* Картинка */}
             <Image
               src={src}
-              alt={`Сертификат ${idx + 1}`}
+              alt={`Сертификат гуманитарное разминирование ${idx + 1}`}
               width={400}
               height={500}
               className="object-cover w-full h-auto"
