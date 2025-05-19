@@ -29,7 +29,7 @@ export default function AboutCompany() {
           />
           <Image
             src="/images/about/abou2.jpg"
-            alt="Сапёр гуманитарного разминирования"
+            alt="Разминирование"
             width={800}
             height={600}
             className="rounded-lg shadow-lg"

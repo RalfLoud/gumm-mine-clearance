@@ -14,7 +14,7 @@ export default function HeroSection() {
       
       {/* Контент */}
       <div className="container relative z-10 text-center px-4">
-        <Image src={"/images/main-logo-kondorra.png"} width={200} quality={100} height={120} alt={"logo"} className="mx-auto"/>
+        <Image src={"/images/main-logo-kondorra.webp"} width={200} quality={100} height={120} alt={"Гуманитарное разминирование"} priority={true} className="mx-auto"/>
         <h1 className="text-2xl md:text-6xl font-bold my-6 leading-tight text-white">
           СЛУЖБА ГУММАНИТАРНОГО РАЗМИНИРОВАНИЯ
         </h1>
