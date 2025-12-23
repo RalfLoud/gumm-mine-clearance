@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="container relative z-10 text-center px-4">
         <Image src={"/images/main-logo-kondorra.webp"} width={200} quality={100} height={120} alt={"Гуманитарное разминирование"} priority={true} className="mx-auto"/>
         <h1 className="text-2xl md:text-6xl font-bold my-6 leading-tight text-white">
-          СЛУЖБА ГУММАНИТАРНОГО РАЗМИНИРОВАНИЯ
+          СЛУЖБА ГУМАНИТАРНОГО РАЗМИНИРОВАНИЯ
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-white opacity-80">
           Нельзя создать прочный мир там, где почва полна мин.
