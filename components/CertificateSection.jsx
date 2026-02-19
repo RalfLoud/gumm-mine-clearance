@@ -2,10 +2,10 @@ import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
 
 const certificates = [
-  "/images/certificates/certificate1.png",
-  "/images/certificates/certificate2.png",
-  // "/images/certificates/certificate1.png",
-  // "/images/certificates/certificate2.png",
+  "/images/certificates/MPC.png",
+  "/images/certificates/extraction_1.png",
+  "/images/certificates/extraction_2.png",
+  "/images/certificates/extraction_3.png",
 ];
 
 const CertificateSection = () => {
